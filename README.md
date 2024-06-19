@@ -11,7 +11,7 @@ Projeto para servir como template/exemplo de arquitetura hexagonal
 
 2. **Portas como Interfaces:**
 - “Portas” são interfaces definidas na camada `domain`. Eles atuam como contratos que especificam as operações que o domínio precisa para interagir com o mundo exterior.
-- Exemplos: `ExecutaExemploService`, que é uma interface utilizada para o controller poder chamar `service` da aplicação
+- Exemplos: `ExecutaExemploServicePort`, que é uma interface utilizada para o controller poder chamar `service` da aplicação
 
 3. **Adaptadores como implementações:**
 - "Adaptadores" são classes localizadas na camada `integration`. Eles implementam as interfaces dentro da pasta `adapter` do `domain`.
