@@ -1,8 +1,7 @@
 package com.picpay.delivery.controller.impl;
 
 import com.picpay.delivery.controller.ControllerExample;
-import com.picpay.domain.ports.ExecutaExemploService;
-import lombok.AllArgsConstructor;
+import com.picpay.domain.ports.ExecutaExemploServicePort;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -13,16 +12,16 @@ public class ControllerExampleImpl implements ControllerExample {
      * ao gerenciamento de dependencia do SPRING
      */
 //    @Autowired
-    private final ExecutaExemploService executaExemploService;
+    private final ExecutaExemploServicePort executaExemploServicePort;
 
-    public ControllerExampleImpl(ExecutaExemploService service) {
-        this.executaExemploService = service;
+    public ControllerExampleImpl(ExecutaExemploServicePort service) {
+        this.executaExemploServicePort = service;
     }
 
 
     @Override
     public final ResponseEntity<Object> postExample(String param) {
-        executaExemploService.exemplo(param);
+        executaExemploServicePort.exemplo(param);
         return null;
     }
 }

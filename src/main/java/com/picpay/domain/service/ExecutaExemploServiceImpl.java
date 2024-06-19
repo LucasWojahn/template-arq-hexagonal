@@ -1,13 +1,13 @@
 package com.picpay.domain.service;
 
 import com.picpay.domain.adapters.ClienteAdapter;
-import com.picpay.domain.ports.ExecutaExemploService;
+import com.picpay.domain.ports.ExecutaExemploServicePort;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
 @Service
-public class ExecutaExemploServiceImpl implements ExecutaExemploService {
+public class ExecutaExemploServiceImpl implements ExecutaExemploServicePort {
     private static final Logger logger = LoggerFactory.getLogger(ExecutaExemploServiceImpl.class);
 
 
