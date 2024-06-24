@@ -26,4 +26,4 @@ Projeto para servir como template/exemplo de arquitetura hexagonal
 - `delivery`: Entrada de dados, controladores REST, consumidores de fila de mensageria, etc.
 - `application`: arquivos de configuração de @Bean, Banco de dados, kafka etc.
 
-<img src="hexagonal-arch-img.svg" alt="Logo da Minha Empresa">
+<img src="hexagonal-arch-img.svg" alt="Desenho Arch">
